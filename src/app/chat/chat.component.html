@@ -1,0 +1,15 @@
+<div>
+      <div *ngIf="chatResponse">
+        <p>{{ chatResponse }}</p>
+      </div>
+      <div markdown ngPreserveWhitespaces *ngFor="let risposta of risposta">#{{ risposta }}</div>
+      <div >   {{risposta1}}</div>
+      
+
+</div>
+<div>
+<input id="messaggio"  [(ngModel)]="chatInput" placeholder="messaggio">
+  
+<br>
+    <button (click)="inviaMessaggio1()">Invia</button>
+  </div>
